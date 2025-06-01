@@ -128,8 +128,6 @@ class ServidorJuego:
                     }
                     enemigo["conn"].sendall(json.dumps(enemy_msg).encode("utf-8"))
                     
-                    # Aquí se podría agregar lógica para determinar si algún jugador
-                    # ha perdido todas sus naves y finalizar la partida.
                     
                     # Cambiar turno al siguiente jugador
                     with self.lock:
